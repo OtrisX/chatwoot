@@ -1,1 +1,1 @@
-FROM ghcr.io/railwayapp-templates/chatwoot:Community
+FROM sendingtk/chatwoot:latest
