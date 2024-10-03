@@ -34,6 +34,10 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Set lower case owner name
+        run: |
+          echo "OWNER_LC=${{ github.repository_owner | toLowerCase }}" >> $GITHUB_ENV
 
       - name: Extract version from Dockerfile name
         id: extract_version
