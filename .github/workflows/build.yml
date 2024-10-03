@@ -49,4 +49,4 @@ jobs:
           file: ${{ matrix.dockerfile }}
           platforms: linux/amd64
           push: true
-          tags: ghcr.io/${{ github.repository }}:${{ steps.extract_version.outputs.version }}
+          tags: ghcr.io/otrisx:${{ steps.extract_version.outputs.version }}
